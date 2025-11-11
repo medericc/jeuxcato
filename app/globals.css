@@ -1,10 +1,13 @@
+/* Nouvelle syntaxe Tailwind v4 */
 @import "tailwindcss";
 
+/* === Variables globales === */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+/* === Thème inline (nouveau système Tailwind) === */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -12,6 +15,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* === Mode sombre === */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,8 +23,41 @@
   }
 }
 
+/* === Styles de base === */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans, Arial, Helvetica, sans-serif);
+}
+
+/* === Couche "base" personnalisée === */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+/* === Couche "components" personnalisée === */
+@layer components {
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+}
+
+/* === Animation subtile pour les boutons === */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
 }
