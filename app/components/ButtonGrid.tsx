@@ -37,9 +37,9 @@ export default function ButtonGrid() {
   ]
 
   return (
-    <div className="w-full mx-auto px-4 sm:px-3 lg:px-4 pb-8">
+    <div className="w-full mx-auto px-4 md:px-8 pb-8">
       {/* Grille principale avec moins d'espacement */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 mt-pt-5 md:pb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 mt:mt-15 md:pb-20">
         {buttons.map((button, index) => (
           <div 
             key={index}
