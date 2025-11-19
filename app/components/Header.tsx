@@ -6,8 +6,8 @@ export default function Header() {
           Ressources <span className="text-blue-700">Catholiques</span>
         </h1>
         <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-          Approfondissez votre foi à travers les vies des saints, 
-          les écrits des docteurs et la défense de la vérité
+          Jouez avec le christianisme à travers des quizz inspirés,
+des défis d’équipe et une ambiance fraternelle.
         </p>
       </div>
     </header>
