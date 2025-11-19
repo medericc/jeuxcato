@@ -13,7 +13,7 @@ export default function ButtonGrid() {
     {
       title: "Juste Un",
       description: "Devinez entre vous les mots",
-      icon: "📚",
+      icon: "❔",
       color: "from-purple-600 to-purple-700",
       hoverColor: "hover:from-purple-600 hover:to-purple-700",
       url: "https://justeun.vercel.app/"
@@ -21,7 +21,7 @@ export default function ButtonGrid() {
     {
       title: "Trivia Biblique",
       description: "Trivial Pursuit sur la foi catholique",
-      icon: "⚔️",
+      icon: "📖",
       color: "from-amber-600 to-amber-700",
       hoverColor: "hover:from-amber-600 hover:to-amber-700",
       url: "https://jeu-trivia-biblique.vercel.app/"
