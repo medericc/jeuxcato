@@ -4,15 +4,15 @@ export default function ButtonGrid() {
   const buttons = [
     {
       title: "L'Apostat'",
-      description: "Découvrez les témoins exemplaires de la foi chrétienne",
-      icon: "🙏",
+      description: "Trouvez l'intrus parmi vous",
+      icon: "🕵️‍♀️",
       color: "from-blue-600 to-blue-700",
       hoverColor: "hover:from-blue-600 hover:to-blue-700",
       url: "https://lapostat.vercel.app/"
     },
     {
       title: "Juste Un",
-      description: "Plongez dans la sagesse des grands théologiens",
+      description: "Devinez entre vous les mots",
       icon: "📚",
       color: "from-purple-600 to-purple-700",
       hoverColor: "hover:from-purple-600 hover:to-purple-700",
@@ -20,7 +20,7 @@ export default function ButtonGrid() {
     },
     {
       title: "Trivia Biblique",
-      description: "Défendez la vérité de la foi catholique face aux hérétiques",
+      description: "Trivial Pursuit sur la foi catholique",
       icon: "⚔️",
       color: "from-amber-600 to-amber-700",
       hoverColor: "hover:from-amber-600 hover:to-amber-700",
