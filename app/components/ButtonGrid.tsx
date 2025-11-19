@@ -72,7 +72,7 @@ export default function ButtonGrid() {
       </div>
       
       {/* Section inspiration plus compacte */}
-      <div className="mt-8 sm:mt-10 lg:mt-12 text-center w-full max-w-5xl mx-auto">
+      <div className="mt-8 sm:mt-10 lg:mt-12 text-center w-full max-w-5xl mx-auto  sm:block hidden">
         <div className="bg-white/70 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-7 shadow-md">
           <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-slate-800 mb-2 sm:mb-3">
             &quot;La vérité vous rendra libres&quot; - Jean 8:32
