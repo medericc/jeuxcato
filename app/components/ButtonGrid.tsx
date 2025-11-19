@@ -24,7 +24,7 @@ export default function ButtonGrid() {
       icon: "⚔️",
       color: "from-amber-600 to-amber-700",
       hoverColor: "hover:from-amber-600 hover:to-amber-700",
-      url: "https://trivia-biblique.vercel.app/"
+      url: "https://jeu-trivia-biblique.vercel.app/"
     },
      {
       title: "Jeux Play Store",
