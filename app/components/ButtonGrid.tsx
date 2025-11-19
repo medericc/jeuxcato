@@ -13,7 +13,7 @@ export default function ButtonGrid() {
     {
       title: "Juste Un",
       description: "Jeu d’équipe chrétien où un mot caché doit être retrouvé",
-      icon: "❔",
+      icon: "💬",
       color: "from-purple-600 to-purple-700",
       hoverColor: "hover:from-purple-600 hover:to-purple-700",
       url: "https://justeun.vercel.app/"
