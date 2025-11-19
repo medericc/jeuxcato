@@ -13,22 +13,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Ressources Catholiques — Vie des Saints, Docteurs de l’Église, Défense de la Foi',
-  description: 'Découvrez la vie des saints, les écrits des docteurs de l’Église et défendez la vérité catholique avec des ressources fiables et inspirantes.',
+  title: 'Jeux Catholiques — Juste Un, Trivia Biblique, l\'Apostat',
+  description: 'Découvrez des jeux avec le christianisme.',
   manifest: '/manifest.json',
   themeColor: '#ffffff',
-  keywords: ['saints', 'docteurs de l’église', 'théologie catholique', 'hérésies', 'foi chrétienne', 'ressources catholiques'],
+  keywords: ['jeux', 'foi chrétienne', 'Jeux catholiques'],
   openGraph: {
-    title: 'Ressources Catholiques',
-    description: 'Découvrez la vie des saints, les écrits des docteurs et les ressources pour défendre la foi.',
-    url: 'https://app-catholique.vercel.app/',
-    siteName: 'Ressources Catholiques',
+    title: 'Jeux Catholiques',
+    description: 'Découvrez des jeux avec le christianisme',
+    url: 'https://jeux-catholiques.vercel.app/',
+    siteName: 'Jeux Catholiques',
     images: [
       {
-        url: 'https://app-catholique.vercel.app/preview.jpg',
+        url: 'https://jeux-catholiques.vercel.app/preview.jpg',
         width: 1200,
         height: 630,
-        alt: 'Ressources Catholiques',
+        alt: 'Jeux Catholiques',
       },
     ],
     locale: 'fr_FR',
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ressources Catholiques',
-    description: 'Découvrez la vie des saints, les écrits des docteurs et combattez les hérésies.',
-    images: ['https://app-catholique.vercel.app/og-image.jpg'],
+    title: 'Jeux Catholiques',
+    description: 'Découvrez des jeux avec le christianisme',
+    images: ['https://jeux-catholiques.vercel.app/og-image.jpg'],
   },
 };
 
