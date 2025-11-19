@@ -4,7 +4,7 @@ export default function ButtonGrid() {
   const buttons = [
     {
       title: "L'Apostat'",
-      description: "Trouvez l'intrus parmi vous",
+      description: "Jeu d’enquête chrétien où vous démasquez l’imposteur",
       icon: "🕵️‍♀️",
       color: "from-blue-600 to-blue-700",
       hoverColor: "hover:from-blue-600 hover:to-blue-700",
@@ -12,7 +12,7 @@ export default function ButtonGrid() {
     },
     {
       title: "Juste Un",
-      description: "Devinez entre vous les mots",
+      description: "Jeu d’équipe chrétien où un mot caché doit être retrouvé",
       icon: "❔",
       color: "from-purple-600 to-purple-700",
       hoverColor: "hover:from-purple-600 hover:to-purple-700",
@@ -20,7 +20,7 @@ export default function ButtonGrid() {
     },
     {
       title: "Trivia Biblique",
-      description: "Trivial Pursuit sur la foi catholique",
+      description: "Quiz biblique complet pour tester et partager votre foi",
       icon: "📖",
       color: "from-amber-600 to-amber-700",
       hoverColor: "hover:from-amber-600 hover:to-amber-700",
