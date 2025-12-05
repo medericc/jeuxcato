@@ -37,15 +37,17 @@ export default function ButtonGrid() {
       color: "from-amber-600 to-amber-700",
       hoverColor: "hover:from-amber-600 hover:to-amber-700",
       url: "https://jeu-trivia-biblique.vercel.app/"
-    },
-    {
-      title: "Jeux Play Store",
-      description: "Jeux de société et quiz sur le christianisme",
-      icon: "🎲",
-      color: "from-pink-600 to-pink-700",
-      hoverColor: "hover:from-pink-600 hover:to-pink-700",
-      url: "https://play.google.com/store/apps/developer?id=medericcc&hl=fr"
     }
+    
+    // ,
+    // {
+    //   title: "Jeux Play Store",
+    //   description: "Jeux de société et quiz sur le christianisme",
+    //   icon: "🎲",
+    //   color: "from-pink-600 to-pink-700",
+    //   hoverColor: "hover:from-pink-600 hover:to-pink-700",
+    //   url: "https://play.google.com/store/apps/developer?id=medericcc&hl=fr"
+    // }
   ]
 
 const handleClick = (button: GameButton, index: number) => {
