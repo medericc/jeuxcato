@@ -17,7 +17,7 @@ export default function ButtonGrid() {
 
   const buttons = [
     {
-      title: "L'Apostat'",
+      title: "L'Apostat",
       description: "Jeu d’enquête chrétien où vous démasquez l’imposteur",
       icon: "🕵️‍♀️",
       color: "from-blue-600 to-blue-700",
@@ -54,44 +54,58 @@ export default function ButtonGrid() {
 
   return (
     <>
-      <div className="w-full mx-auto px-4 sm:px-3 lg:px-4 pb-8">
+      <div className="w-full mx-auto px-4 sm:px-3 lg:px-4 pb-8 mt-5">
         {/* <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 mt-pt-5 md:pb-20">
            */}
 
-           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 
-                gap-3 sm:gap-4 lg:gap-5 mt-pt-5 md:pb-20
-                justify-center justify-items-center
-                max-w-5xl mx-auto">
+          <div 
+  className="
+    grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3
+    gap-5 sm:gap-6 lg:gap-8 
+    mt-pt-8 md:pb-11
+    w-full
+    px-2 sm:px-4 lg:px-8
+    mx-auto
+  "
+>
 
-          {buttons.map((button, index) => (
-            <div 
-              key={index}
-              className="group cursor-pointer transform transition-all duration-300 hover:scale-[1.02]"
-              onClick={() => handleClick(button, index)}
-            >
-              <div className={`bg-gradient-to-br ${button.color} ${button.hoverColor} rounded-2xl p-4 sm:p-5 lg:p-6 text-white shadow-lg transition-all duration-300 group-hover:shadow-xl h-full flex flex-col min-h-[200px] sm:min-h-[220px] lg:min-h-[240px]`}>
-                
-                <div className="text-4xl sm:text-5xl lg:text-6xl mb-3 sm:mb-4 text-center">{button.icon}</div>
-
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 text-center leading-snug">
-                  {button.title}
-                </h3>
-
-                <p className="text-white/90 text-center flex-grow text-xs sm:text-sm lg:text-base leading-tight sm:leading-relaxed px-1">
-                  {button.description}
-                </p>
-
-                <div className="mt-3 sm:mt-4 lg:mt-5 text-center">
-                  <span className="inline-block bg-white/25 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold backdrop-blur-sm transition-all group-hover:bg-white/35 group-hover:scale-105">
-                    Accéder
-                  </span>
-                </div>
-
-              </div>
-            </div>
-          ))}
-
+  {buttons.map((button, index) => (
+    <div
+      key={index}
+      className="group cursor-pointer transform transition-all duration-300 hover:scale-[1.02] w-full"
+      onClick={() => handleClick(button, index)}
+    >
+      <div
+        className={`
+          bg-gradient-to-br ${button.color} ${button.hoverColor} 
+          rounded-2xl p-6 sm:p-7 lg:p-8 
+          text-white shadow-lg transition-all duration-300 group-hover:shadow-xl 
+          h-full flex flex-col 
+          min-h-[240px] sm:min-h-[260px] lg:min-h-[300px]   /* ➜ plus grand */
+        `}
+      >
+        <div className="text-5xl sm:text-6xl lg:text-7xl mb-4 text-center">
+          {button.icon}
         </div>
+
+        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 text-center">
+          {button.title}
+        </h3>
+
+        <p className="text-white/90 text-center flex-grow text-sm sm:text-base lg:text-lg leading-relaxed px-2">
+          {button.description}
+        </p>
+
+        <div className="mt-5 text-center">
+          <span className="inline-block bg-white/25 px-4 py-2 rounded-full text-sm sm:text-base font-semibold backdrop-blur-sm transition-all group-hover:bg-white/35 group-hover:scale-105">
+            Accéder
+          </span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
 
         <div className="mt-8 sm:mt-10 lg:mt-12 text-center w-full max-w-5xl mx-auto sm:block hidden">
           <div className="bg-white/70 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-7 shadow-md">
