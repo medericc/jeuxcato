@@ -55,8 +55,14 @@ export default function ButtonGrid() {
   return (
     <>
       <div className="w-full mx-auto px-4 sm:px-3 lg:px-4 pb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 mt-pt-5 md:pb-20">
-          
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 mt-pt-5 md:pb-20">
+           */}
+
+           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 
+                gap-3 sm:gap-4 lg:gap-5 mt-pt-5 md:pb-20
+                justify-center justify-items-center
+                max-w-5xl mx-auto">
+
           {buttons.map((button, index) => (
             <div 
               key={index}
