@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+
 type GameButton = {
   title: string;
   description: string;
@@ -9,9 +10,10 @@ type GameButton = {
   hoverColor: string;
   url: string;
 };
+
 export default function ButtonGrid() {
 
-  const [showModal, setShowModal] = useState(false);
+  // const [showModal, setShowModal] = useState(false); // ❌ Modale désactivée
 
   const buttons = [
     {
@@ -38,30 +40,23 @@ export default function ButtonGrid() {
       hoverColor: "hover:from-amber-600 hover:to-amber-700",
       url: "https://jeu-trivia-biblique.vercel.app/"
     }
-    
-    // ,
-    // {
-    //   title: "Jeux Play Store",
-    //   description: "Jeux de société et quiz sur le christianisme",
-    //   icon: "🎲",
-    //   color: "from-pink-600 to-pink-700",
-    //   hoverColor: "hover:from-pink-600 hover:to-pink-700",
-    //   url: "https://play.google.com/store/apps/developer?id=medericcc&hl=fr"
-    // }
-  ]
 
-const handleClick = (button: GameButton, index: number) => {
-  if (index === 0) {
-    setShowModal(true);
-  } else {
-    window.open(button.url, "_blank");
-  }
-};
+    // , // { // title: "Jeux Play Store", // description: "Jeux de société et quiz sur le christianisme", // icon: "🎲", // color: "from-pink-600 to-pink-700", // hoverColor: "hover:from-pink-600 hover:to-pink-700", // url: "https://play.google.com/store/apps/developer?id=medericcc&hl=fr" // }
+  ];
+
+  const handleClick = (button: GameButton, index: number) => {
+    // if (index === 0) {
+    //   setShowModal(true);  // ❌ Modale désactivée
+    // } else {
+      window.open(button.url, "_blank");  // ✅ Tous les liens ouverts normalement
+    // }
+  };
 
   return (
     <>
       <div className="w-full mx-auto px-4 sm:px-3 lg:px-4 pb-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 mt-pt-5 md:pb-20">
+          
           {buttons.map((button, index) => (
             <div 
               key={index}
@@ -89,9 +84,10 @@ const handleClick = (button: GameButton, index: number) => {
               </div>
             </div>
           ))}
+
         </div>
 
-        <div className="mt-8 sm:mt-10 lg:mt-12 text-center w-full max-w-5xl mx-auto  sm:block hidden">
+        <div className="mt-8 sm:mt-10 lg:mt-12 text-center w-full max-w-5xl mx-auto sm:block hidden">
           <div className="bg-white/70 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-7 shadow-md">
             <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-slate-800 mb-2 sm:mb-3">
               &quot;La vérité vous rendra libres&quot; - Jean 8:32
@@ -103,7 +99,8 @@ const handleClick = (button: GameButton, index: number) => {
         </div>
       </div>
 
-      {/* MODALE */}
+      {/*  
+      MODALE DÉSACTIVÉE
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm z-50 px-4">
           <div className="bg-white rounded-2xl shadow-xl p-6 max-w-sm w-full text-center">
@@ -123,6 +120,8 @@ const handleClick = (button: GameButton, index: number) => {
           </div>
         </div>
       )}
+      */}
+
     </>
-  )
+  );
 }
